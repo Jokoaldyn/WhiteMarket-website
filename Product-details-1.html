@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-
+        scale=1.0">
+         <title>All Products - White Market</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?
+        family=Poppins:wght@300;400;500;600;700&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logos.png" width="100px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart1.png" width="40px" height="40px"> 
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>                
+    </div>
+
+   <!-------single product details--------->
+
+        <div class="small-container single-product">
+           <div class="row">
+            <div class="col-2">
+                <img src="images/Pork ribs (chopped).jpg" width="100%">
+                
+            </div>
+            <div class="col-2">
+                <p>Home / Meats</p>
+                <h1>Pork Ribs(Chopped)</h1>
+                <h4>PHP 90.00</h4>
+                <select>
+                    <option>Default Variant</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>High Quality and Delicious fresh from the farm Pork ribs</p>
+            </div>
+           </div>
+        </div>
+    
+<!-----title----->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+
+
+<!-------products------->
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/Beef Brisket (Cubed).jpg" alt="0">
+                <h4>Beef Brisket (Cubed)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>PHP 220.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Beef Shank (Bulalo).jpg" alt="0">
+                <h4>Beef Shank (Bulalo)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>PHP 240.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Beef Short Ribs.jpg" alt="0">
+                <h4>Beef Short Ribs</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>PHP 250.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Ground Beef.jpg" alt="0">
+                <h4>Ground Beef</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>PHP 240.00</p>
+            </div>
+        </div>
+           
+       
+    </div>
+    
+    <!---------footer--------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                       <img src="images/play-store.png"> 
+                       <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logos.png">
+                    <p>Our Purpose is to sustainably make pleasure and
+                        benefits of our products to mankind.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &#169; 2023 - GROUP 8 </p>
+            <p class="copyright">FOR EDUCATIONAL PURPOSES ONLY</p>
+        </div>
+    </div>
+<!--------js for toggle menu-------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
